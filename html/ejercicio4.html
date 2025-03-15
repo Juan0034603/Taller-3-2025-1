@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio # 4</title>
+    <meta name="author" content="Juan Martinez">
+    <meta name="description" content="Ejercicio #4">
+    <meta name="keywords" content="Formulario, Avanzadas, Nombre">
+
+</head>
+
+<body>
+    <h1>Formulario con Validaciones Avanzadas</h1>
+
+    <form action="">
+        <label for="nombre">Nombre Completo: </label>
+        <input type="text" id="nombre" pattern="^[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+( [A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)*$"
+            placeholder="Ej: Juan Pérez Gómez" autofocus required>
+
+        <br>
+        <br>
+
+        <label for="correo">Correo Electrónico: </label>
+        <input type="email" id="correo" placeholder="Ej: usuario@correo.com"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+
+        <br>
+        <br>
+
+        <label for="tel">Teléfono: </label>
+        <input type="tel" id="tel" placeholder="Ej: +52 55 1234"
+            pattern="^\+57[ -]?[3-9][0-9]{2}[ -]?[0-9]{3}[ -]?[0-9]{4}$" required>
+
+        <br>
+        <br>
+
+        <label for="dirección">Dirección: </label>
+        <input type="text" id="dirección" placeholder="Ej: Calle 123, Colonia Centro" pattern="^[a-zA-Z0-9.,#\- ]+$"  required>
+
+        <br>
+        <br>
+
+        
+        <label for="codigo">Código Postal:</label>
+        <input type="text" id="codigo" placeholder="Ej:28001" pattern="^\d{5}$" required>
+
+        <br>
+        <br>
+
+        <label for="id">ID de Usuario:</label>
+        <input type="text" id="id" placeholder="Ej: User123" required>
+
+        <br>
+        <br>
+
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+
+
+    </form>
+</body>
+
+</html>
